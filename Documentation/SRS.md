@@ -73,6 +73,5 @@ Expense counter - это мобильное приложение для план
  ### 4. Аналоги <a name="4"></a>
   1. Приложение ["Monefy"](https://play.google.com/store/apps/details?id=com.monefy.app.lite)  
   Одно из наиболее популярных приложений для планирования бюджета на сегодняшний день. С помощью этого приложения можно разделять затраты по категориям, указывать даты и места совершения покупок, а также устанавливать ограничения на затраты и это далеко не весь список возможностей.
-  2. Приложение ["Money Manager Expense & Budget"](https://play.google.com/store/apps/details?id=com.realbyteapps.moneymanagerfree)
-  
+  2. Приложение ["Money Manager Expense & Budget"](https://play.google.com/store/apps/details?id=com.realbyteapps.moneymanagerfree)     
   Обладает похожим на Monefy функционалом, однако выполнено в более простом графическом стиле и имеет дргую организацию навигации.
