@@ -5,4 +5,4 @@ Expense counter - это мобильное приложение для план
 ***
 ### Requirments: ([Ru](https://github.com/SergeiObolevich/ExpenseCounter/blob/master/Documentation/Requirements/SRS.md))
 ***
-### Diagrams: ([Ru](https://github.com/SergeiObolevich/ExpenseCounter/tree/master/Documentation/Diagrams))
+### Diagrams: ([Ru](https://github.com/SergeiObolevich/ExpenseCounter/blob/master/Documentation/Diagrams/Diagrams.md))
