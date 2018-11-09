@@ -1,2 +1,2 @@
-# Диаграмма классов
- ![Диаграмма классов](https://github.com/SergeiObolevich/ExpenseCounter/blob/master/Documentation/Diagrams/Classes/ClassDiagram.png)
+# Р”РёР°РіСЂР°РјРјР° РєР»Р°СЃСЃРѕРІ
+ ![Р”РёР°РіСЂР°РјРјР° РєР»Р°СЃСЃРѕРІ](https://github.com/SergeiObolevich/ExpenseCounter/blob/master/Documentation/Diagrams/Classes/ClassDiagram.png)
