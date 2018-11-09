@@ -1,2 +1,2 @@
-# Диаграмма развертывания
- ![Диаграмма развертывания](https://github.com/SergeiObolevich/ExpenseCounter/blob/master/Documentation/Diagrams/Deployments/DeploymentDiagram.png)
+# Р”РёР°РіСЂР°РјРјР° СЂР°Р·РІРµСЂС‚С‹РІР°РЅРёСЏ
+ ![Р”РёР°РіСЂР°РјРјР° СЂР°Р·РІРµСЂС‚С‹РІР°РЅРёСЏ](https://github.com/SergeiObolevich/ExpenseCounter/blob/master/Documentation/Diagrams/Deployments/DeploymentDiagram.png)
