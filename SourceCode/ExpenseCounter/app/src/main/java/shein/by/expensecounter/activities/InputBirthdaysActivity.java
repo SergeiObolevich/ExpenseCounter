@@ -1,0 +1,101 @@
+package shein.by.expensecounter.activities;
+
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Calendar;
+
+import shein.by.expensecounter.R;
+
+public class InputBirthdaysActivity extends Activity implements View.OnClickListener {
+    private EditText etName;
+    private Button btnOK;
+    private Button btnChoiceDate;
+    private Button btnAddContact;
+    private TextView textView;
+
+    private Calendar calendar = Calendar.getInstance();
+
+    private int DIALOG_DATE = 1;
+    private int myYear = calendar.get(Calendar.YEAR);
+    private int myMonth = calendar.get(Calendar.MONTH) + 1;
+    private int myDay = calendar.get(Calendar.DAY_OF_MONTH);
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.input_birthdays);
+
+        etName = (EditText) findViewById(R.id.et_birthdays_name);
+        btnOK = (Button) findViewById(R.id.input_birthdays_add);
+        btnChoiceDate = (Button) findViewById(R.id.birthays_choose_data);
+        btnOK.setOnClickListener(this);
+        btnChoiceDate.setOnClickListener(this);
+
+        btnAddContact = (Button) findViewById(R.id.birthdays_add_contact);
+        btnAddContact.setOnClickListener(this);
+
+        textView = (TextView) findViewById(R.id.tv_birthdays_choose_date);
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent();
+        switch (view.getId()){
+            case R.id.input_birthdays_add:
+                if(etName.getText().toString().equals("") && textView.getText().toString().equals("")){
+                    Toast.makeText(this, "Введите имя и дату", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    String inputDate = "" + myYear + "." + myMonth + "." + myDay;
+                    intent.putExtra("name", etName.getText().toString());
+                    intent.putExtra("date", inputDate);
+                    setResult(RESULT_OK, intent);
+                    finish();
+                }
+                break;
+            case R.id.birthays_choose_data:
+                showDialog(DIALOG_DATE);
+                break;
+            case R.id.birthdays_add_contact:
+                Intent contactIntent = new Intent(this, ContactActivity.class);
+                startActivityForResult(contactIntent, 1);
+                break;
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(data == null) return;
+        String name = data.getStringExtra("contact");
+        etName.setText(name);
+    }
+
+    protected Dialog onCreateDialog(int id) {
+        if (id == DIALOG_DATE) {
+            DatePickerDialog tpd = new DatePickerDialog(this, myCallBack, myYear, myMonth, myDay);
+            return tpd;
+        }
+        return super.onCreateDialog(id);
+    }
+
+    DatePickerDialog.OnDateSetListener myCallBack = new DatePickerDialog.OnDateSetListener() {
+
+        public void onDateSet(DatePicker view, int year, int monthOfYear,
+                              int dayOfMonth) {
+            myYear = year;
+            myMonth = monthOfYear + 1;
+            myDay = dayOfMonth;
+            textView.setText("Выбранная дата " + myDay + "/" + myMonth + "/" + myYear);
+        }
+    };
+}

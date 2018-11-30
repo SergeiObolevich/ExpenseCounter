@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Expense counter</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="start_balance_str">Starting balance</string>
+    <string name="spent_balance_str">Spent</string>
+    <string name="current_balance_tv">Current balance</string>
+    <string name="expense_counter_application">Expense counter application</string>
+    <string name="obolevich_gmail_com">sergei.obolevich.shein@gmail.com</string>
+    <string name="current_balance_str">Current balance</string>
+    <string name="money_box_str">Moneybox</string>
+    <string name="your_debts_str">Your debts</string>
+    <string name="debts_str">Debts</string>
+    <string name="change_balance_Str">Set / change balance</string>
+    <string name="arrears_str">Debts</string>
+    <string name="arrears_add_str">Add</string>
+    <string name="birthdays_str">Birthdays</string>
+    <string name="birthdays_add_str">Add</string>
+    <string name="category_str">Categories</string>
+    <string name="category_add_str">Add a note</string>
+    <string name="contacts_Str">Contacts</string>
+    <string name="enter_budget_str">Enter budget</string>
+    <string name="edit_text_budget_str">budget</string>
+    <string name="add_str">Add</string>
+    <string name="sub_budget_str">Take away</string>
+    <string name="set_budget_str">Set an initial budget</string>
+    <string name="reset_budget_str">budget reset</string>
+    <string name="close_str">close</string>
+    <string name="input_name_str">Enter your name</string>
+    <string name="et_name_str">Name</string>
+    <string name="add_from_contact_str">Add from contacts</string>
+    <string name="choose_date_str">Choose a date</string>
+    <string name="input_money_str">Enter amount</string>
+    <string name="et_money_str">Amount</string>
+    <string name="note_str">Note</string>
+    <string name="your_dept_str">Your debt</string>
+    <string name="dept_str">Debt</string>
+    <string-array name="arrears_list">
+        <item>Your debt</item>
+        <item>Debt</item>
+    </string-array>
+
+    <string-array name="category_list">
+        <item>Eat</item>
+        <item>House</item>
+        <item>Clothes and shoes</item>
+        <item>Hobby</item>
+        <item>Medicines</item>
+        <item>The Internet</item>
+        <item>Education</item>
+        <item>Travels</item>
+        <item>Telephone communications</item>
+        <item>Entertainment</item>
+    </string-array>
+</resources>
