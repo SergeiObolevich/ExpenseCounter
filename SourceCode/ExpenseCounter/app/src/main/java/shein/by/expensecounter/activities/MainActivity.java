@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity
         btnChangeBalance = (Button) findViewById(R.id.main_change_start_balance);
         btnChangeBalance.setOnClickListener(this);
         loadAll();
-
     }
 
     public void loadAll() {
@@ -85,10 +84,7 @@ public class MainActivity extends AppCompatActivity
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Число еще не добавлено", Toast.LENGTH_SHORT).show();
         }
-
-
     }
-
 
     @Override
     public void onClick(View view) {

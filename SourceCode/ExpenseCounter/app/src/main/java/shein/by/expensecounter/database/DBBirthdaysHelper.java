@@ -12,7 +12,7 @@ public class DBBirthdaysHelper {
     private DBHelper dbHelper;
     private SQLiteDatabase sqLiteDatabase;
 
-    public DBBirthdaysHelper(Context mContext){
+    public DBBirthdaysHelper(Context mContext) {
         context = mContext;
     }
 
@@ -21,7 +21,7 @@ public class DBBirthdaysHelper {
         sqLiteDatabase = dbHelper.getWritableDatabase();
     }
 
-    public void close(){
+    public void close() {
         if(dbHelper != null) dbHelper.close();
     }
 
@@ -30,14 +30,14 @@ public class DBBirthdaysHelper {
                 null, null, null, null);
     }
 
-    public void addRec(String text, String date){
+    public void addRec(String text, String date) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DBHelper.COLUMN_BIRTHDAYS_NAME, text);
         contentValues.put(DBHelper.COLUMN_BIRTHDAYS_DATE, date);
         sqLiteDatabase.insert(DBHelper.DB_BIRTHDAYS_TABLE, null, contentValues);
     }
 
-    public void delRec(long id){
+    public void delRec(long id) {
         sqLiteDatabase.delete(DBHelper.DB_BIRTHDAYS_TABLE,
                 DBHelper.COLUMN_BIRTHDAYS_ID + " = " + id, null);
     }
