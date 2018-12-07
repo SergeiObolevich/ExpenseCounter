@@ -23,4 +23,6 @@ public class ExampleInstrumentedTest {
 
         assertEquals("shein.by.expensecounter", appContext.getPackageName());
     }
+
+
 }
